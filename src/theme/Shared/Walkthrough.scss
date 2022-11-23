@@ -1,0 +1,9 @@
+.walkthrough-page {
+    display: flex;
+    flex-direction: column;
+
+    &.walkthrough-header {
+        display: flex;
+        flex-direction: row;
+    }
+}
