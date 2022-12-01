@@ -1,0 +1,38 @@
+.floating-input-view {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    // border-bottom: 1px solid #d1d1d1;
+    margin-right: 3%;
+
+    &.right {
+        margin-right: 0;
+    }
+
+    .placeholder {
+        position: absolute;
+        font-size: 14px;
+        color: #73787B;
+        transition: 0.3s;
+        transform: translate(0, 5px);
+    }
+
+    .placeholder.slide-up {
+        transform: translate(0, -5px);
+    }
+    
+    .floating-input {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 12px 0px 0px 0px;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

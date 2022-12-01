@@ -2,8 +2,9 @@ import "./theme";
 import { Routes, Route } from "react-router-dom";
 import CreateAccount from "./components/CreateAccount";
 import Login from "./components/Login";
-import Walkthrough1 from "./components/Walkthroughs/Walkthrough1";
+import VAWalkthrough from "./components/VA-Walkthrough/";
 import MobileContainer from "./components/Shared/MobileContainer";
+import Dashboard from "./components/Dashboard";
 function App() {
   return (
     <MobileContainer>
@@ -11,7 +12,8 @@ function App() {
         <Routes>
           <Route path="/" element={<CreateAccount />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/walkthrough-1" element={<Walkthrough1 />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/va-walkthrough" element={<VAWalkthrough />} />
         </Routes>
       </div>
     </MobileContainer>

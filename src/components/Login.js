@@ -21,6 +21,7 @@ const Login = (props) => {
     event.preventDefault();
     console.log(email);
     console.log(password);
+    navigate("/dashboard");
   }
 
   return (
@@ -166,7 +167,10 @@ const Login = (props) => {
                 type="password"
                 value={password}
               />
-              <LoginButton type="submit" mod={((email.length > 0) && (password.length > 0)) ? "green" : ""}>
+              <LoginButton
+                type="submit"
+                mod={email.length > 0 && password.length > 0 ? "green" : ""}
+              >
                 Login
               </LoginButton>
             </form>

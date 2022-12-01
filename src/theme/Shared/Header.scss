@@ -1,0 +1,31 @@
+.lw-header {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+    border-bottom: solid 1px #cfd4d7;
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+
+    & .middle {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    & .left {
+        position: absolute;
+        left: 0;
+    }
+
+    & .right {
+        position: absolute;
+        right: 0;
+    }
+
+    & .header-link {
+        padding: 10px 17px;
+    }
+}

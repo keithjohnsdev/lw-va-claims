@@ -5,3 +5,7 @@ import "./Shared/Buttons.scss";
 import "./Shared/Containers.scss";
 import "./Shared/Inputs.scss";
 import "./Shared/Walkthrough.scss";
+import "./Dashboard.scss";
+import "./Shared/CollapsingDiv.scss";
+import "./Shared/Header.scss";
+import "./Shared/FloatingInput.scss";

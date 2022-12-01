@@ -21,6 +21,7 @@ const CreateAccount = (props) => {
     event.preventDefault();
     console.log(email);
     console.log(password);
+    navigate("/dashboard");
   }
 
   return (
@@ -166,7 +167,10 @@ const CreateAccount = (props) => {
                 type="password"
                 value={password}
               />
-              <LoginButton type="submit" mod={((email.length > 0) && (password.length > 0)) ? "green" : ""}>
+              <LoginButton
+                type="submit"
+                mod={email.length > 0 && password.length > 0 ? "green" : ""}
+              >
                 Create Account
               </LoginButton>
             </form>

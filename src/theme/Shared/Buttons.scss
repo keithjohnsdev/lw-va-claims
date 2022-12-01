@@ -23,6 +23,17 @@
     font-weight: 600;
 }
 
+.wt-button {
+    background: linear-gradient(to bottom, #8ba0ac, #73787b);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 60px;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
 .italic {
     font-style: italic;
 }
@@ -32,6 +43,15 @@
     cursor: pointer;
     &:hover {
         background-color: #4ad478;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.144);
+    }
+}
+
+.blue {
+    background: linear-gradient(to bottom, #42b4e6, #1b93c5);
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(to bottom, #1b93c5, #42b4e6);
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.144);
     }
 }
